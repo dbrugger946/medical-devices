@@ -1,0 +1,15 @@
+services:
+  artemis:
+    container_name: artemis-local
+    image: registry.redhat.io/amq7/amq-broker:7.8
+    ports:
+      - "5672:5672"
+      - "61616:61616"
+      - "8161:8161"
+    environment:
+      AMQ_USER: "admin"
+      AMQ_PASSWORD: "admin"
+    networks:
+      - demo-net
+networks:
+  demo-net: {}

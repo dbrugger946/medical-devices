@@ -1,0 +1,2 @@
+# source venv/bin/activate
+python simulators/iot/pumpjack/sim.py --location-id field-01 --rig-id pumpjack-01 --broker-username admin --broker-password admin --telemetry-topic 'sensor-data-mqtt' --telemetry-frequency 1 --buffer-timeout 10000 --verbose 'tcp://192.168.0.18:32610'
